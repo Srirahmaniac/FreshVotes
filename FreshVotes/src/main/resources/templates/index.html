@@ -1,0 +1,12 @@
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<title>Fresh Votes Home page</title>
+</head>
+<body>
+	<h3>Welcome to fresh votes Application</h3>
+	<form action="/logout" method="POST">
+		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+		<button type="submit">Sign out</button>
+	</form>
+</body>
+</html>
